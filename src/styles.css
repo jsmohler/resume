@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: mmhmm;
+  src: url(assets/fonts/Mmhmm-Regular.otf) format('opentype');
+}

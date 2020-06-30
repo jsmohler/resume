@@ -14,11 +14,13 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { AntModule } from './layout/ant.module';
+import { ResumeComponent } from './components/resume/resume.component';
+import { HomeComponent } from './components/home/home.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ResumeComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
