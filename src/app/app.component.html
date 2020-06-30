@@ -9,29 +9,21 @@
       [nzLg]="18"
       [nzXl]="16"
     >
-      <nz-header class="header">
-        <div nz-row nzJustify="end">
-          <ul nz-menu nzTheme="dark" nzMode="horizontal" class="header">
-            <li nz-menu-item nzMatchRouter>
-              <a routerLink="/home">Home</a>
-            </li>
-            <li nz-menu-item nzMatchRouter>
-              <a routerLink="/about">About Me</a>
-            </li>
-            <li nz-menu-item nzMatchRouter>
-              <a routerLink="/resume">Experience</a>
-            </li>
-            <li nz-menu-item nzMatchRouter class="end-menu-item">
-              <a routerLink="/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nz-header>
-      <nz-content>
-        <nz-card class="inner-content">
-          <router-outlet></router-outlet>
-        </nz-card>
-      </nz-content>
+      <nz-card class="inner-content">
+        <nz-card-tab>
+          <div nz-row nzJustify="end">
+            <nz-tabset nzSize="large" nzLinkRouter>
+              <nz-tab><a nz-tab-link routerLink="/home">Home</a></nz-tab>
+              <nz-tab><a nz-tab-link routerLink="/about">About Me</a></nz-tab>
+              <nz-tab
+                ><a nz-tab-link routerLink="/experience">Experience</a></nz-tab
+              >
+              <nz-tab><a nz-tab-link routerLink="/contact">Contact</a></nz-tab>
+            </nz-tabset>
+          </div>
+        </nz-card-tab>
+        <router-outlet></router-outlet>
+      </nz-card>
     </div>
   </div>
   <div nz-row nzJustify="center">

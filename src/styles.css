@@ -4,3 +4,11 @@
   font-family: mmhmm;
   src: url(assets/fonts/Mmhmm-Regular.otf) format('opentype');
 }
+
+.ant-card-head {
+  border-bottom: none;
+}
+
+.ant-card-head .ant-tabs-bar {
+  border-bottom: none;
+}
