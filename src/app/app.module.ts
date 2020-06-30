@@ -16,11 +16,13 @@ import en from '@angular/common/locales/en';
 import { AntModule } from './layout/ant.module';
 import { ResumeComponent } from './components/resume/resume.component';
 import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, ResumeComponent, HomeComponent],
+  declarations: [AppComponent, ResumeComponent, HomeComponent, ContactComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
