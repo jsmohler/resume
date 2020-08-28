@@ -11,7 +11,13 @@
         <h2>
           a work in progress
           <div style="margin-top: 50px; font-size: 72px">
-            <a nz-button nzType="link" nzGhost nzSize="large">
+            <a
+              nz-button
+              nzType="link"
+              nzGhost
+              nzSize="large"
+              (click)="scrollToSection('profile')"
+            >
               <i class="down-icon" nz-icon nzType="down" nzTheme="outline"></i>
             </a>
           </div>
@@ -23,5 +29,5 @@
 </div>
 
 <div id="content">
-  <app-home></app-home>
+  <app-home id="profile"></app-home>
 </div>
