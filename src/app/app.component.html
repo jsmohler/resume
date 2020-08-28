@@ -29,40 +29,43 @@
 </div>
 
 <div id="content">
-  <nz-affix [nzOffsetTop]="48">
-    <nz-tabset
-      nzLinkRouter
-      [nzLinkExact]="false"
-      nzTabPosition="right"
-      [nzType]="'line'"
-      nzSize="large"
-    >
-      <nz-tab>
-        <a nz-tab-link [routerLink]="['.']" [fragment]="'about'">About Me</a>
-      </nz-tab>
-      <nz-tab>
-        <a nz-tab-link [routerLink]="['.']" [fragment]="'skills'">Skills</a>
-      </nz-tab>
-      <nz-tab>
-        <a nz-tab-link [routerLink]="['.']" [fragment]="'experience'"
-          >Experience</a
-        >
-      </nz-tab>
-      <nz-tab>
-        <a nz-tab-link [routerLink]="['.']" [fragment]="'publications'"
-          >Publications</a
-        >
-      </nz-tab>
-      <nz-tab>
-        <a nz-tab-link [routerLink]="['.']" [fragment]="'testimonials'"
-          >Testimonials</a
-        >
-      </nz-tab>
-      <nz-tab>
-        <a nz-tab-link [routerLink]="['.']" [fragment]="'contact'">Contact</a>
-      </nz-tab>
-    </nz-tabset>
-  </nz-affix>
-
-  <app-home id="about"></app-home>
+  <div nz-row nzJustify="space-between">
+    <div style="width: calc(100% - 175px)">
+      <app-home id="about"></app-home>
+    </div>
+    <nz-affix [nzOffsetTop]="48">
+      <nz-tabset
+        nzLinkRouter
+        [nzLinkExact]="false"
+        nzTabPosition="right"
+        [nzType]="'line'"
+        nzSize="large"
+      >
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['.']" [fragment]="'about'">About Me</a>
+        </nz-tab>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['.']" [fragment]="'skills'">Skills</a>
+        </nz-tab>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['.']" [fragment]="'experience'"
+            >Experience</a
+          >
+        </nz-tab>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['.']" [fragment]="'publications'"
+            >Publications</a
+          >
+        </nz-tab>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['.']" [fragment]="'testimonials'"
+            >Testimonials</a
+          >
+        </nz-tab>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['.']" [fragment]="'contact'">Contact</a>
+        </nz-tab>
+      </nz-tabset>
+    </nz-affix>
+  </div>
 </div>
