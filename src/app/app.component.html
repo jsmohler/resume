@@ -1,32 +1,18 @@
-<nz-layout class="app-layout">
-  <div nz-row nzJustify="center" nzAlign="center" class="outer-content">
-    <div
-      nz-col
-      class="outer-content"
-      [nzXs]="24"
-      [nzSm]="22"
-      [nzMd]="20"
-      [nzLg]="18"
-      [nzXl]="16"
-    >
-      <nz-card class="inner-content">
-        <nz-card-tab>
-          <div nz-row nzJustify="end">
-            <nz-tabset nzSize="large" nzLinkRouter>
-              <nz-tab><a nz-tab-link routerLink="/home">Home</a></nz-tab>
-              <nz-tab><a nz-tab-link routerLink="/about">About Me</a></nz-tab>
-              <nz-tab
-                ><a nz-tab-link routerLink="/experience">Experience</a></nz-tab
-              >
-              <nz-tab><a nz-tab-link routerLink="/contact">Contact</a></nz-tab>
-            </nz-tabset>
-          </div>
-        </nz-card-tab>
-        <router-outlet></router-outlet>
-      </nz-card>
+<div class="cover">
+  <div
+    nz-row
+    nzType="flex"
+    nzJustify="center"
+    class="welcome-text-outer-container"
+  >
+    <div class="welcome-text-inner-container">
+      <h1 class="welcome-text">Jordan Mohler</h1>
+      <h2>a work in progress</h2>
     </div>
   </div>
-  <div nz-row nzJustify="center">
-    <nz-footer class="footer">Email: jordansmohler@gmail.com</nz-footer>
-  </div>
-</nz-layout>
+  <div class="overlay"></div>
+</div>
+
+<div id="content">
+  <app-home></app-home>
+</div>

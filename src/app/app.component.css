@@ -1,29 +1,74 @@
-:host {
-  display: flex;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.app-layout {
-  height: 100vh;
-  background-image: url("../assets/images/pr_background.png");
-}
-
-.inner-content {
+html,
+body,
+.cover,
+#content,
+.overlay {
   width: 100%;
-  height: 80vh;
-  border-radius: 20px;
-  background-color: #f0f2f5;
-}
-
-.outer-content {
   height: 100%;
-  display: flex;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.cover {
+  background: url("../assets/images/landscape.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+.filler {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  z-index: 2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.33);
+  z-index: 1;
 }
 
-.footer {
-  background: transparent;
-  color: rgb(255, 255, 255, 0.65);
+#content {
+  padding: 100px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-text-outer-container {
+  position: absolute;
+  align-items: center;
+  right: 0px;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  z-index: 2;
+}
+
+.welcome-text-inner-container {
+  height: fit-content;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.welcome-text {
+  font-family: "mmhmm";
+  font-size: 96px;
+  color: white;
+  margin: 0;
+  line-height: 90%;
+}
+
+h2 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
