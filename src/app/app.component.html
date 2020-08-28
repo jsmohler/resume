@@ -16,7 +16,7 @@
               nzType="link"
               nzGhost
               nzSize="large"
-              (click)="scrollToSection('profile')"
+              (click)="scrollToSection('about')"
             >
               <i class="down-icon" nz-icon nzType="down" nzTheme="outline"></i>
             </a>
@@ -29,5 +29,40 @@
 </div>
 
 <div id="content">
-  <app-home id="profile"></app-home>
+  <nz-affix [nzOffsetTop]="48">
+    <nz-tabset
+      nzLinkRouter
+      [nzLinkExact]="false"
+      nzTabPosition="right"
+      [nzType]="'line'"
+      nzSize="large"
+    >
+      <nz-tab>
+        <a nz-tab-link [routerLink]="['.']" [fragment]="'about'">About Me</a>
+      </nz-tab>
+      <nz-tab>
+        <a nz-tab-link [routerLink]="['.']" [fragment]="'skills'">Skills</a>
+      </nz-tab>
+      <nz-tab>
+        <a nz-tab-link [routerLink]="['.']" [fragment]="'experience'"
+          >Experience</a
+        >
+      </nz-tab>
+      <nz-tab>
+        <a nz-tab-link [routerLink]="['.']" [fragment]="'publications'"
+          >Publications</a
+        >
+      </nz-tab>
+      <nz-tab>
+        <a nz-tab-link [routerLink]="['.']" [fragment]="'testimonials'"
+          >Testimonials</a
+        >
+      </nz-tab>
+      <nz-tab>
+        <a nz-tab-link [routerLink]="['.']" [fragment]="'contact'">Contact</a>
+      </nz-tab>
+    </nz-tabset>
+  </nz-affix>
+
+  <app-home id="about"></app-home>
 </div>

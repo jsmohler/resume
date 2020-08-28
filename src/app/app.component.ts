@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   scrollToSection(section: string): void {
-    const element = document.querySelector('#' + section);
+    const element = document.getElementById(section);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       this.router.navigate(['./'], { fragment: section });

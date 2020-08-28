@@ -31,6 +31,7 @@ import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzAffixModule } from 'ng-zorro-antd/affix';
 
 const antModules = [
   NzPopoverModule,
@@ -57,7 +58,7 @@ const antModules = [
   NzModalModule,
   NzSkeletonModule,
   NzSpinModule,
-
+  NzAffixModule,
   NzDividerModule,
 ];
 
