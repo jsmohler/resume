@@ -37,7 +37,6 @@ body,
 }
 
 #content {
-  padding: 48px;
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,4 +94,22 @@ h2 {
   100% {
     transform: translateY(-10px);
   }
+}
+
+.nav {
+  position: absolute;
+  right: 48px;
+  padding-top: 48px;
+  z-index: 2;
+}
+
+.content-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+}
+
+.contact-content {
+  background-color: rgb(142, 132, 126, 0.5);
 }

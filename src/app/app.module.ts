@@ -14,15 +14,21 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { AntModule } from './layout/ant.module';
-import { ResumeComponent } from './components/resume/resume.component';
-import { HomeComponent } from './components/home/home.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, ResumeComponent, HomeComponent, ContactComponent, AboutComponent],
+  declarations: [
+    AppComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    ContactComponent,
+    AboutComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
