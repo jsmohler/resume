@@ -32,7 +32,7 @@ body,
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.33);
+  background: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
@@ -109,9 +109,10 @@ h2 {
   padding: 48px 200px 48px 200px;
 }
 
-.contact-content {
-  background-color: rgb(142, 132, 126, 0.7);
+.grey-content {
+  background-color: rgb(142, 132, 126, 0.8);
 }
-.skills-content {
-  background-color: rgb(139, 91, 89, 0.6);
+.blush-content {
+  background-color: rgb(139, 91, 89, 0.5);
+  box-shadow: 3px 3px 5px 5px #ccc;
 }

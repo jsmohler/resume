@@ -18,6 +18,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
+import { PublicationsComponent } from './components/publications/publications.component';
 
 registerLocaleData(en);
 
@@ -28,6 +29,7 @@ registerLocaleData(en);
     ExperienceComponent,
     ContactComponent,
     AboutComponent,
+    PublicationsComponent,
   ],
   imports: [
     BrowserModule,
