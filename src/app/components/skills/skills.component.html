@@ -9,19 +9,31 @@
       context: { $implicit: languageSkills, header: 'Languages' }
     "
   ></ng-container>
+  <div>
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: {
+          $implicit: certificationSkills,
+          header: 'Certifications'
+        }
+      "
+    ></ng-container>
+    <br />
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: {
+          $implicit: frameworkSkills,
+          header: 'Frameworks and Platforms'
+        }
+      "
+    ></ng-container>
+  </div>
   <ng-container
     *ngTemplateOutlet="
       skillList;
       context: { $implicit: databaseSkills, header: 'Databases' }
-    "
-  ></ng-container>
-  <ng-container
-    *ngTemplateOutlet="
-      skillList;
-      context: {
-        $implicit: frameworkSkills,
-        header: 'Frameworks and Platforms'
-      }
     "
   ></ng-container>
   <ng-container
@@ -42,6 +54,7 @@
     <nz-list-item *ngFor="let skill of skills">
       <span class="skill-name">{{ skill.name }}</span>
       <nz-rate
+        *ngIf="skill.level > 0"
         [ngModel]="skill.level"
         nzDisabled
         [nzCharacter]="starIcon"

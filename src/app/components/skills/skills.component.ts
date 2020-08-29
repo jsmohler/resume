@@ -16,6 +16,7 @@ export class SkillsComponent implements OnInit {
   databaseSkills: Skill[];
   frameworkSkills: Skill[];
   toolingSkills: Skill[];
+  certificationSkills: Skill[];
   softSkills: Skill;
 
   // Web Development: JavaScript, HTML, CSS, Node.js, AngularJS, Express.js
@@ -163,6 +164,13 @@ export class SkillsComponent implements OnInit {
       {
         name: 'Docker',
         level: 1,
+      },
+    ];
+
+    this.certificationSkills = [
+      {
+        name: 'RPA Advanced Developer (UiPath)',
+        level: null,
       },
     ];
   }
