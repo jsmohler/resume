@@ -5,10 +5,26 @@
   src: url("./assets/fonts/Mmhmm-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "kaushan";
+  src: url("./assets/fonts/KaushanScript-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "chewy";
+  src: url("./assets/fonts/Chewy-Regular.ttf") format("opentype");
+}
+
 .ant-card-head {
   border-bottom: none;
 }
 
 .ant-card-head .ant-tabs-bar {
   border-bottom: none;
+}
+
+h1 {
+  color: #48737a;
+  font-size: 64px;
+  font-family: "chewy";
 }
