@@ -1,10 +1,4 @@
-import {
-  Component,
-  OnInit,
-  HostListener,
-  Renderer2,
-  ElementRef,
-} from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -56,7 +50,6 @@ export class AppComponent implements OnInit {
           (index === offsets.length - 1 || position < offsets[index + 1].offset)
         ) {
           this.tabIndex = index;
-          this.scrollToSection(o.section);
         }
       });
     });

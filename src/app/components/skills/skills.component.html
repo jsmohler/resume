@@ -1,3 +1,51 @@
 <div nz-row nzJustify="center">
   <h1>Skills</h1>
 </div>
+
+<div nz-row nzJustify="space-between">
+  <ng-container
+    *ngTemplateOutlet="
+      skillList;
+      context: { $implicit: languageSkills, header: 'Languages' }
+    "
+  ></ng-container>
+  <ng-container
+    *ngTemplateOutlet="
+      skillList;
+      context: { $implicit: databaseSkills, header: 'Databases' }
+    "
+  ></ng-container>
+  <ng-container
+    *ngTemplateOutlet="
+      skillList;
+      context: {
+        $implicit: frameworkSkills,
+        header: 'Frameworks and Platforms'
+      }
+    "
+  ></ng-container>
+  <ng-container
+    *ngTemplateOutlet="
+      skillList;
+      context: { $implicit: toolingSkills, header: 'Tooling' }
+    "
+  ></ng-container>
+</div>
+
+<ng-template #starIcon
+  ><i nz-icon nzType="star" nzTheme="fill"></i
+></ng-template>
+
+<ng-template #skillList let-skills let-header="header">
+  <nz-list nzSize="small">
+    <nz-list-header class="skill-header">{{ header }}</nz-list-header>
+    <nz-list-item *ngFor="let skill of skills">
+      <span class="skill-name">{{ skill.name }}</span>
+      <nz-rate
+        [ngModel]="skill.level"
+        nzDisabled
+        [nzCharacter]="starIcon"
+      ></nz-rate>
+    </nz-list-item>
+  </nz-list>
+</ng-template>

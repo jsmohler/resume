@@ -32,6 +32,7 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzAffixModule } from 'ng-zorro-antd/affix';
+import { NzRateModule } from 'ng-zorro-antd/rate';
 
 const antModules = [
   NzPopoverModule,
@@ -60,6 +61,7 @@ const antModules = [
   NzSpinModule,
   NzAffixModule,
   NzDividerModule,
+  NzRateModule,
 ];
 
 /** config angular i18n **/
