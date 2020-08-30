@@ -2,14 +2,64 @@
   <h1>Skills</h1>
 </div>
 
-<div nz-row nzJustify="space-between">
-  <ng-container
-    *ngTemplateOutlet="
-      skillList;
-      context: { $implicit: languageSkills, header: 'Languages' }
-    "
-  ></ng-container>
-  <div>
+<div nz-row nzJustify="space-around">
+  <div nz-col>
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: {
+          $implicit: frameworkSkills,
+          header: 'Frameworks'
+        }
+      "
+    ></ng-container>
+    <br />
+    <br />
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: {
+          $implicit: patternSkills,
+          header: 'Patterns and Paradigms'
+        }
+      "
+    ></ng-container>
+    <br />
+    <br />
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: { $implicit: awsSkills, header: 'AWS' }
+      "
+    ></ng-container>
+  </div>
+
+  <div nz-col>
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: { $implicit: languageSkills, header: 'Languages' }
+      "
+    ></ng-container>
+    <br />
+    <br />
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: { $implicit: databaseSkills, header: 'Databases' }
+      "
+    ></ng-container>
+  </div>
+
+  <div nz-col>
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: { $implicit: toolingSkills, header: 'Tooling' }
+      "
+    ></ng-container>
+    <br />
+    <br />
     <ng-container
       *ngTemplateOutlet="
         skillList;
@@ -20,28 +70,25 @@
       "
     ></ng-container>
     <br />
+    <br />
     <ng-container
       *ngTemplateOutlet="
         skillList;
         context: {
-          $implicit: frameworkSkills,
-          header: 'Frameworks and Platforms'
+          $implicit: methodologySkills,
+          header: 'Methodologies'
         }
       "
     ></ng-container>
+    <br />
+    <br />
+    <ng-container
+      *ngTemplateOutlet="
+        skillList;
+        context: { $implicit: softSkills, header: 'Non-Technical' }
+      "
+    ></ng-container>
   </div>
-  <ng-container
-    *ngTemplateOutlet="
-      skillList;
-      context: { $implicit: databaseSkills, header: 'Databases' }
-    "
-  ></ng-container>
-  <ng-container
-    *ngTemplateOutlet="
-      skillList;
-      context: { $implicit: toolingSkills, header: 'Tooling' }
-    "
-  ></ng-container>
 </div>
 
 <ng-template #starIcon

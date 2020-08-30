@@ -1,0 +1,11 @@
+:host {
+  flex-grow: 1;
+}
+
+i {
+  padding-right: 8px;
+}
+
+p {
+  margin-bottom: 0;
+}

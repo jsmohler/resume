@@ -17,7 +17,10 @@ export class SkillsComponent implements OnInit {
   frameworkSkills: Skill[];
   toolingSkills: Skill[];
   certificationSkills: Skill[];
-  softSkills: Skill;
+  awsSkills: Skill[];
+  softSkills: Skill[];
+  methodologySkills: Skill[];
+  patternSkills: Skill[];
 
   // Web Development: JavaScript, HTML, CSS, Node.js, AngularJS, Express.js
   // Operating Systems: Windows, Linux
@@ -111,20 +114,12 @@ export class SkillsComponent implements OnInit {
         level: 4,
       },
       {
-        name: 'AWS',
-        level: 3,
-      },
-      {
         name: 'ReactJS',
         level: 3,
       },
       {
         name: 'Express.js',
         level: 3,
-      },
-      {
-        name: 'Microsoft Azure',
-        level: 2,
       },
     ];
 
@@ -171,6 +166,97 @@ export class SkillsComponent implements OnInit {
       {
         name: 'RPA Advanced Developer (UiPath)',
         level: null,
+      },
+    ];
+
+    this.awsSkills = [
+      {
+        name: 'CloudWatch',
+        level: 5,
+      },
+      {
+        name: 'Lambda',
+        level: 4,
+      },
+      {
+        name: 'Systems Manager',
+        level: 4,
+      },
+      {
+        name: 'API Gateway',
+        level: 3,
+      },
+      {
+        name: 'S3',
+        level: 3,
+      },
+      {
+        name: 'CDK',
+        level: 2,
+      },
+      {
+        name: 'IAM',
+        level: 2,
+      },
+      {
+        name: 'EventBridge',
+        level: 2,
+      },
+      {
+        name: 'SQS',
+        level: 2,
+      },
+    ];
+
+    this.methodologySkills = [
+      {
+        name: 'Agile / SCRUM',
+        level: 5,
+      },
+    ];
+
+    this.softSkills = [
+      {
+        name: 'Presentations',
+        level: 5,
+      },
+      {
+        name: 'Training',
+        level: 4,
+      },
+      {
+        name: 'Small Team Leadership',
+        level: 4,
+      },
+      {
+        name: 'Documentation',
+        level: 3,
+      },
+    ];
+
+    this.methodologySkills = [
+      {
+        name: 'Agile / SCRUM',
+        level: 5,
+      },
+    ];
+
+    this.patternSkills = [
+      {
+        name: 'OOP',
+        level: 5,
+      },
+      {
+        name: 'N-Tier Architecture',
+        level: 5,
+      },
+      {
+        name: 'REST',
+        level: 4,
+      },
+      {
+        name: 'MVC Pattern',
+        level: 4,
       },
     ];
   }

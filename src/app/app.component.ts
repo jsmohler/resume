@@ -42,17 +42,17 @@ export class AppComponent implements OnInit {
         offset: document.getElementById('contact').offsetTop,
       },
     ];
-    this.listener = this.renderer2.listen('window', 'scroll', (e) => {
-      const position = window.scrollY;
-      offsets.forEach((o, index) => {
-        if (
-          position > o.offset &&
-          (index === offsets.length - 1 || position < offsets[index + 1].offset)
-        ) {
-          this.tabIndex = index;
-        }
-      });
-    });
+    // this.listener = this.renderer2.listen('window', 'scroll', (e) => {
+    //   const position = window.scrollY;
+    //   offsets.forEach((o, index) => {
+    //     if (
+    //       position > o.offset &&
+    //       (index === offsets.length - 1 || position < offsets[index + 1].offset)
+    //     ) {
+    //       this.tabIndex = index;
+    //     }
+    //   });
+    // });
   }
 
   scrollToSection(section: string): void {
