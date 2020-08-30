@@ -1,0 +1,12 @@
+:host {
+  width: 80%;
+}
+
+.ant-card {
+  background-color: rgb(255, 255, 255, 0.8);
+  border: none;
+}
+
+h4 {
+  color: rgba(0, 0, 0, 1);
+}
