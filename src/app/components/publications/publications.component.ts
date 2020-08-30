@@ -7,11 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./publications.component.css'],
 })
 export class PublicationsComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {}
-
-  navTo(url: string): void {
-    window.location.href = url;
-  }
 }
