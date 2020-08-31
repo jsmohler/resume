@@ -16,7 +16,14 @@ export class AppComponent implements OnInit {
   listener;
   tabIndex = 0;
 
+  isMobile: boolean;
+  readonly mobileBreakpoint = 1225;
+
   ngOnInit(): void {
+    this.isMobile = screen.width < this.mobileBreakpoint;
+    window.onresize = () => {
+      this.isMobile = screen.width < this.mobileBreakpoint;
+    };
     this.route.fragment.subscribe((frag) => {
       this.scrollToSection(frag);
     });

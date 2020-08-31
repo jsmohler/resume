@@ -29,7 +29,7 @@
 </div>
 
 <div id="content">
-  <nz-affix [nzOffsetTop]="48" class="nav">
+  <!-- <nz-affix [nzOffsetTop]="48" class="nav" *ngIf="!isMobile">
     <nz-tabset
       nzLinkRouter
       [nzLinkExact]="false"
@@ -58,7 +58,7 @@
         <a nz-tab-link [routerLink]="['.']" [fragment]="'contact'">Contact</a>
       </nz-tab>
     </nz-tabset>
-  </nz-affix>
+  </nz-affix> -->
 
   <div class="content-section about-content">
     <app-about id="about"></app-about>

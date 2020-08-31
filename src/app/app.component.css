@@ -8,6 +8,11 @@ body,
   margin: 0;
   padding: 0;
 }
+
+body {
+  position: fixed;
+}
+
 .cover {
   background: url("../assets/images/landscape.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -61,10 +66,32 @@ body,
 
 .welcome-text {
   font-family: "mmhmm";
-  font-size: 96px;
+  font-size: 64px;
   color: white;
-  margin: 108px 0 0 0;
-  line-height: 90%;
+  margin: 72px 0 0 0;
+  line-height: 70%;
+}
+
+@media screen and (min-width: 750) {
+  .welcome-text {
+    font-size: 96px;
+    margin: 108px 0 0 0;
+    line-height: 90%;
+  }
+  .content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 24px 24px 24px 24px;
+  }
+}
+
+@media screen and (max-width: 400) {
+  .welcome-text {
+    font-size: 48px;
+    margin: 50px 0 0 0;
+    line-height: 50%;
+  }
 }
 
 h2 {
@@ -106,7 +133,16 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 35px 200px 35px 200px;
+  padding: 35px 100px 35px 100px;
+}
+
+@media screen and (min-width: 1225px) {
+  .content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 35px 200px 35px 200px;
+  }
 }
 
 .grey-content {

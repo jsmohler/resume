@@ -5,6 +5,7 @@
 .ant-card {
   background-color: rgb(255, 255, 255, 0.8);
   border: none;
+  word-break: break-all;
 }
 
 h4 {

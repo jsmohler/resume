@@ -1,8 +1,8 @@
 <div nz-row nzJustify="center">
   <h1 style="margin-bottom: 12px">About Me</h1>
 </div>
-<div nz-row nzAlign="center" nzJustify="space-between" nzGutter="8">
-  <div nz-col [nzSpan]="8">
+<div nz-row nzAlign="center" nzJustify="space-between" [nzGutter]="[8, 24]">
+  <div nz-col [nzSpan]="isMobile ? 24 : 8">
     Recent computer science graduate offering a strong foundation in programming
     principals, ability to quickly grasp new concepts, and adaptability to
     rapidly changing software demands. Experienced with object-oriented
@@ -10,10 +10,14 @@
     processes, including agile methodologies. Thrives in both team and
     individual work environments.
   </div>
-  <div nz-col [nzSpan]="8" style="display: flex; justify-content: center">
+  <div
+    nz-col
+    [nzSpan]="isMobile ? 24 : 8"
+    style="display: flex; justify-content: center"
+  >
     <img src="../../../assets/images/waterfall_selfie.png" height="225px" />
   </div>
-  <div nz-col [nzSpan]="8" style="text-align: center">
+  <div nz-col [nzSpan]="isMobile ? 24 : 8" style="text-align: center">
     <h2>Name</h2>
     <div>Jordan S Mohler</div>
     <br />

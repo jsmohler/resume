@@ -19,10 +19,17 @@ export interface ExperienceHeader {
 })
 export class ExperienceComponent implements OnInit {
   experiences: Experience[];
+  isMobile: boolean;
+  readonly mobileBreakpoint = 750;
 
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.isMobile = screen.width < this.mobileBreakpoint;
+    window.onresize = () => {
+      this.isMobile = screen.width < this.mobileBreakpoint;
+    };
+
     this.experiences = [
       {
         header: {

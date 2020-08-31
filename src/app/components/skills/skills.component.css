@@ -28,3 +28,15 @@ i {
   text-align: center;
   font-weight: 500;
 }
+
+.ant-collapse-borderless {
+  background: none;
+}
+
+.collapse-header {
+  font-weight: 500;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: #48737a !important;
+}
