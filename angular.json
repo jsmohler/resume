@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "personal-resume": {
+    "resume": {
       "projectType": "application",
       "schematics": {},
       "root": "",
