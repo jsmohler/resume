@@ -1,0 +1,31 @@
+:host {
+  width: 90%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(142, 132, 126);
+}
+
+.icon {
+  background-color: #48737a;
+  margin-right: 8px;
+}
+
+.quote {
+  color: #dedbd9;
+  font-family: "kaushan";
+}
+
+.attribution {
+  color: #dedbd9;
+}
+
+a {
+  /* color: white; */
+  font-weight: 500;
+}

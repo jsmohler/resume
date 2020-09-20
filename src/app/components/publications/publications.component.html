@@ -1,0 +1,27 @@
+<div nz-row nzJustify="center" class="section-header">
+  <div nz-col [nzSpan]="24">
+    <h1>Publications</h1>
+  </div>
+  <div nz-col [nzSpan]="24">
+    <h2 class="quote">
+      "Your best and wisest refuge from all troubles is in your science" - Ada
+      Lovelace
+    </h2>
+  </div>
+</div>
+
+<div nz-row [nzGutter]="[48, 24]" nzJustify="space-around">
+  <nz-col *ngFor="let pub of publications" [nzXs]="24" [nzMd]="12">
+    <nz-card style="height: 100%" [nzTitle]="title1">
+      <ng-template #title1>
+        <h4 style="white-space: normal">
+          <a [href]="pub.link">{{ pub.title }}</a>
+        </h4>
+        <em style="white-space: normal">{{ pub.journal }}</em>
+      </ng-template>
+      <p>
+        {{ pub.citation }}
+      </p>
+    </nz-card>
+  </nz-col>
+</div>

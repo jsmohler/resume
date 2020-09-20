@@ -1,0 +1,33 @@
+<div nz-row nzJustify="center" class="section-header">
+  <div nz-col [nzSpan]="24">
+    <h1>Contact</h1>
+  </div>
+  <div nz-col [nzSpan]="24">
+    <h2 class="quote">
+      "Somewhere, something incredible is waiting to be known" - Carl Sagan
+    </h2>
+  </div>
+</div>
+
+<nz-divider></nz-divider>
+<div nz-row nzJustify="space-around" [nzGutter]="32">
+  <div nz-col>
+    <a href="mailto:jordansmohler@gmail.com">
+      <nz-avatar class="icon" nzShape="square" nzIcon="mail"></nz-avatar>
+      <span *ngIf="!isMobile">jordansmohler@gmail.com</span>
+    </a>
+  </div>
+  <div nz-col>
+    <a href="https://www.linkedin.com/in/mohlerjordan">
+      <nz-avatar class="icon" nzShape="square" nzIcon="linkedin"> </nz-avatar>
+      <span *ngIf="!isMobile">https://www.linkedin.com/in/mohlerjordan</span>
+    </a>
+  </div>
+  <div nz-col>
+    <a href="https://github.com/jsmohler">
+      <nz-avatar class="icon" nzShape="square" nzIcon="github"> </nz-avatar>
+      <span *ngIf="!isMobile">https://github.com/jsmohler</span>
+    </a>
+  </div>
+</div>
+<nz-divider></nz-divider>

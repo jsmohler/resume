@@ -1,0 +1,24 @@
+:host {
+  width: 90%;
+}
+
+i {
+  padding-right: 8px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.role {
+  font-size: calc(0.75em + 0.15vw);
+}
+
+.responsibility {
+  font-size: calc(0.85em + 0.25vw);
+}
+
+.quote {
+  color: #dedbd9;
+  font-family: "kaushan";
+}

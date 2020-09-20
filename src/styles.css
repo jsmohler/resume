@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "kaushan";
+  src: url("./assets/fonts/KaushanScript-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "chewy";
+  src: url("./assets/fonts/Chewy-Regular.ttf") format("opentype");
+}
+
+.ant-card-head {
+  border-bottom: none;
+}
+
+.ant-card-head .ant-tabs-bar {
+  border-bottom: none;
+}
+
+h1 {
+  color: #48737a;
+  font-size: calc(3em + 2vw);
+  font-family: "chewy";
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: calc(1em + 0.5vw);
+}
+
+p {
+  font-size: calc(0.85em + 0.25vw);
+  margin-bottom: 0;
+}
+
+li {
+  font-size: calc(0.7em + 0.25vw);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
