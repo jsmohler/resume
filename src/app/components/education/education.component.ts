@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface Skill {
-  name: string;
-  level: number;
-}
-
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',

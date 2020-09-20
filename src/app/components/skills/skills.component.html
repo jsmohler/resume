@@ -1,101 +1,111 @@
-<div nz-row nzJustify="center" style="text-align: center; margin-bottom: 24px">
+<div
+  nz-row
+  nzJustify="center"
+  style="text-align: center; margin-bottom: 24px; padding: 0 16px 0 16px"
+>
   <div nz-col [nzSpan]="24">
     <h1>Skill</h1>
   </div>
   <div nz-col [nzSpan]="24">
     <h2 class="quote">
-      "Your best and wisest refuge from all troubles is in your science" - Ada
-      Lovelace
+      "The most dangerous phrase in the language is, 'We've always done it this
+      way'" - Grace Hopper
     </h2>
   </div>
 </div>
 
-<div nz-row nzJustify="space-around">
-  <div nz-col>
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: {
-          $implicit: frameworkSkills,
-          header: 'Frameworks'
-        }
-      "
-    ></ng-container>
-    <br />
-    <br />
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: {
-          $implicit: patternSkills,
-          header: 'Patterns and Paradigms'
-        }
-      "
-    ></ng-container>
-    <br />
-    <br />
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: { $implicit: awsSkills, header: 'AWS' }
-      "
-    ></ng-container>
-  </div>
+<div style="overflow: hidden">
+  <div
+    nz-row
+    nzJustify="center"
+    [nzGutter]="{ xs: 0, sm: 8, md: 24, lg: 32, xl: 48 }"
+  >
+    <div nz-col>
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: {
+            $implicit: frameworkSkills,
+            header: 'Frameworks'
+          }
+        "
+      ></ng-container>
+      <br />
+      <br />
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: {
+            $implicit: patternSkills,
+            header: 'Patterns and Paradigms'
+          }
+        "
+      ></ng-container>
+      <br />
+      <br />
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: { $implicit: awsSkills, header: 'AWS' }
+        "
+      ></ng-container>
+    </div>
 
-  <div nz-col>
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: { $implicit: languageSkills, header: 'Languages' }
-      "
-    ></ng-container>
-    <br />
-    <br />
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: { $implicit: databaseSkills, header: 'Databases' }
-      "
-    ></ng-container>
-  </div>
+    <div nz-col>
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: { $implicit: languageSkills, header: 'Languages' }
+        "
+      ></ng-container>
+      <br />
+      <br />
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: { $implicit: databaseSkills, header: 'Databases' }
+        "
+      ></ng-container>
+    </div>
 
-  <div nz-col>
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: { $implicit: toolingSkills, header: 'Tooling' }
-      "
-    ></ng-container>
-    <br />
-    <br />
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: {
-          $implicit: certificationSkills,
-          header: 'Certifications'
-        }
-      "
-    ></ng-container>
-    <br />
-    <br />
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: {
-          $implicit: methodologySkills,
-          header: 'Methodologies'
-        }
-      "
-    ></ng-container>
-    <br />
-    <br />
-    <ng-container
-      *ngTemplateOutlet="
-        skillList;
-        context: { $implicit: softSkills, header: 'Non-Technical' }
-      "
-    ></ng-container>
+    <div nz-col>
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: { $implicit: toolingSkills, header: 'Tooling' }
+        "
+      ></ng-container>
+      <br />
+      <br />
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: {
+            $implicit: certificationSkills,
+            header: 'Certifications'
+          }
+        "
+      ></ng-container>
+      <br />
+      <br />
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: {
+            $implicit: methodologySkills,
+            header: 'Methodologies'
+          }
+        "
+      ></ng-container>
+      <br />
+      <br />
+      <ng-container
+        *ngTemplateOutlet="
+          skillList;
+          context: { $implicit: softSkills, header: 'Non-Technical' }
+        "
+      ></ng-container>
+    </div>
   </div>
 </div>
 

@@ -19,6 +19,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { PublicationsComponent } from './components/publications/publications.component';
+import { EducationComponent } from './components/education/education.component';
 
 registerLocaleData(en);
 
@@ -30,6 +31,7 @@ registerLocaleData(en);
     ContactComponent,
     AboutComponent,
     PublicationsComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,

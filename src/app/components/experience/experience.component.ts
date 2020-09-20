@@ -53,38 +53,6 @@ export class ExperienceComponent implements OnInit {
           'Lead small team specialized in delivering Robotics Process Automation solutions by directing design, development, and deployment of bots',
         ],
       },
-      // {
-      //   header: {
-      //     roles: [
-      //       {
-      //         title: 'Student, B.S. Computer Science',
-      //         dates: 'September 2015 - June 2018',
-      //       },
-      //     ],
-      //     company: 'University of Denver',
-      //     location: 'Denver, CO',
-      //   },
-      //   responsibilities: [
-      //     'BS in Computer Science with minors in Mathematics and Business Administration',
-      //     'Graduated Cum Laude with a final GPA of 3.93',
-      //   ],
-      // },
-      {
-        header: {
-          roles: [
-            {
-              title: 'Diversity and Inclusion Specialist, Project Lead',
-              dates: 'March 2018 - May 2018',
-            },
-          ],
-          company: 'Slalom Consulting and Arrow Electronics',
-          location: 'Denver, CO',
-        },
-        responsibilities: [
-          'Lead small team to produce strategy for website feature sets to aid in the promotion of diversity and inclusion',
-          'Research established best design practices for diversity and inclusion sites',
-        ],
-      },
       {
         header: {
           roles: [
@@ -103,6 +71,22 @@ export class ExperienceComponent implements OnInit {
         responsibilities: [
           'Assist University of Denver students, faculty, and staff with software and hardware issues such as: network connectivity issues, software installation, malware detection and removal, and more',
           'Support university-owned technology by providing office-to-office service to faculty and staff',
+        ],
+      },
+      {
+        header: {
+          roles: [
+            {
+              title: 'Diversity and Inclusion Specialist, Project Lead',
+              dates: 'March 2018 - May 2018',
+            },
+          ],
+          company: 'Slalom Consulting and Arrow Electronics',
+          location: 'Denver, CO',
+        },
+        responsibilities: [
+          'Lead small team to produce strategy for website feature sets to aid in the promotion of diversity and inclusion',
+          'Research established best design practices for diversity and inclusion sites',
         ],
       },
       {
