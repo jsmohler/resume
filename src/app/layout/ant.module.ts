@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
@@ -76,7 +75,7 @@ import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, ...antModules],
+  imports: [...antModules],
   exports: [...antModules],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
 })

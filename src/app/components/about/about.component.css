@@ -6,3 +6,8 @@ h2 {
   color: #48737a;
   margin-bottom: 0;
 }
+
+.quote {
+  color: rgb(139, 91, 89, 0.5);
+  font-family: "kaushan";
+}

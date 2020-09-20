@@ -11,3 +11,8 @@
 h4 {
   color: rgba(0, 0, 0, 1);
 }
+
+.quote {
+  color: rgb(139, 91, 89, 0.5);
+  font-family: "kaushan";
+}

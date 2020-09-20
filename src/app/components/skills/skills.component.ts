@@ -150,7 +150,7 @@ export class SkillsComponent implements OnInit {
         level: 3,
       },
       {
-        name: 'Bitbucket Pipelines',
+        name: 'Bitbucket Pipelines / CICD',
         level: 3,
       },
       {

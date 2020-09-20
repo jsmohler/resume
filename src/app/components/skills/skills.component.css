@@ -36,3 +36,8 @@ body {
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {
   color: #48737a !important;
 }
+
+.quote {
+  color: #dedbd9;
+  font-family: "kaushan";
+}
