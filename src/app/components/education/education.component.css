@@ -1,0 +1,16 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:host {
+  flex-grow: 1;
+}
+
+.quote {
+  color: #dedbd9;
+  font-family: "kaushan";
+}
