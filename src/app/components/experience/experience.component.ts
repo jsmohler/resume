@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 export interface Experience {
   header: ExperienceHeader;
@@ -23,17 +23,10 @@ export interface Experienceroles {
 })
 export class ExperienceComponent implements OnInit {
   experiences: Experience[];
-  isMobile: boolean;
-  readonly mobileBreakpoint = 750;
 
   constructor() {}
 
   ngOnInit(): void {
-    this.isMobile = screen.width < this.mobileBreakpoint;
-    window.onresize = () => {
-      this.isMobile = screen.width < this.mobileBreakpoint;
-    };
-
     this.experiences = [
       {
         header: {

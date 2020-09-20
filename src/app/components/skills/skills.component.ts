@@ -22,15 +22,7 @@ export class SkillsComponent implements OnInit {
   methodologySkills: Skill[];
   patternSkills: Skill[];
 
-  isMobile: boolean;
-  readonly mobileBreakpoint = 1300;
-
   ngOnInit(): void {
-    this.isMobile = screen.width < this.mobileBreakpoint;
-    window.onresize = () => {
-      this.isMobile = screen.width < this.mobileBreakpoint;
-    };
-
     this.languageSkills = [
       {
         name: 'C#',
