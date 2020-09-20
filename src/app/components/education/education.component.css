@@ -14,3 +14,15 @@ body {
   color: rgb(139, 91, 89, 0.5);
   font-family: "kaushan";
 }
+
+.role {
+  font-size: calc(0.75em + 0.15vw);
+}
+
+.responsibility {
+  font-size: calc(0.85em + 0.25vw);
+}
+
+h3 {
+  color: #48737a;
+}
