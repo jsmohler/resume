@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 export interface Experience {
   header: ExperienceHeader;
   responsibilities: string[];
+  link: string;
 }
 
 export interface ExperienceHeader {
@@ -52,6 +53,7 @@ export class ExperienceComponent implements OnInit {
           'Oversee initial design and health of two major API repositories over course of 18 months for large-team, multi-website, agile development project',
           'Lead small team specialized in delivering Robotics Process Automation solutions by directing design, development, and deployment of bots',
         ],
+        link: 'https://www.allata.com/',
       },
       {
         header: {
@@ -72,6 +74,7 @@ export class ExperienceComponent implements OnInit {
           'Assist University of Denver students, faculty, and staff with software and hardware issues such as: network connectivity issues, software installation, malware detection and removal, and more',
           'Support university-owned technology by providing office-to-office service to faculty and staff',
         ],
+        link: 'https://www.du.edu/it/',
       },
       {
         header: {
@@ -88,6 +91,7 @@ export class ExperienceComponent implements OnInit {
           'Lead small team to produce strategy for website feature sets to aid in the promotion of diversity and inclusion',
           'Research established best design practices for diversity and inclusion sites',
         ],
+        link: 'https://www.slalom.com/home',
       },
       {
         header: {
@@ -104,6 +108,7 @@ export class ExperienceComponent implements OnInit {
           'Conduct research in Software Security under US NSF Grant CNS 146113',
           'Collaborate with other research associates and Boise State professors to produce two research papers on blockchain technology',
         ],
+        link: 'https://www.boisestate.edu/coen-cs/',
       },
     ];
   }
