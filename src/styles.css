@@ -37,3 +37,8 @@ p {
 li {
   font-size: calc(0.7em + 0.25vw);
 }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
