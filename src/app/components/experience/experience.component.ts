@@ -48,27 +48,27 @@ export class ExperienceComponent implements OnInit {
           location: 'Eagle, ID',
         },
         responsibilities: [
-          'Work as primary leader for a small team with Slalom Consulting',
-          'Determine best practices for promoting diversity and inclusion on internal company websites',
-          'Produce a 5-year plan for an internal diversity and inclusion website for Arrow Electronics',
+          'Full-stack development using MYSQL, .NET Core REST APIs, AWS Lambda Functions, GraphQL, and Angular2+ with Typescript',
+          'Oversee initial design and health of two major API repositories over course of 18 months for large-team, multi-website, agile development project',
+          'Lead small team specialized in delivering Robotics Process Automation solutions by directing design, development, and deployment of bots',
         ],
       },
-      {
-        header: {
-          roles: [
-            {
-              title: 'Student, B.S. Computer Science',
-              dates: 'September 2015 - June 2018',
-            },
-          ],
-          company: 'University of Denver',
-          location: 'Denver, CO',
-        },
-        responsibilities: [
-          'BS in Computer Science with minors in Mathematics and Business Administration',
-          'Graduated Cum Laude with a final GPA of 3.93',
-        ],
-      },
+      // {
+      //   header: {
+      //     roles: [
+      //       {
+      //         title: 'Student, B.S. Computer Science',
+      //         dates: 'September 2015 - June 2018',
+      //       },
+      //     ],
+      //     company: 'University of Denver',
+      //     location: 'Denver, CO',
+      //   },
+      //   responsibilities: [
+      //     'BS in Computer Science with minors in Mathematics and Business Administration',
+      //     'Graduated Cum Laude with a final GPA of 3.93',
+      //   ],
+      // },
       {
         header: {
           roles: [
@@ -81,9 +81,8 @@ export class ExperienceComponent implements OnInit {
           location: 'Denver, CO',
         },
         responsibilities: [
-          'Work as primary leader for a small team with Slalom Consulting',
-          'Determine best practices for promoting diversity and inclusion on internal company websites',
-          'Produce a 5-year plan for an internal diversity and inclusion website for Arrow Electronics',
+          'Lead small team to produce strategy for website feature sets to aid in the promotion of diversity and inclusion',
+          'Research established best design practices for diversity and inclusion sites',
         ],
       },
       {
@@ -118,8 +117,8 @@ export class ExperienceComponent implements OnInit {
           location: 'Boise, ID',
         },
         responsibilities: [
-          'Conduct research in Software Security under US National Science Foundation Grant CNS 146113',
-          'Partner with two other research associates and a Boise State professor to produce two research papers on blockchain technology',
+          'Conduct research in Software Security under US NSF Grant CNS 146113',
+          'Collaborate with other research associates and Boise State professors to produce two research papers on blockchain technology',
         ],
       },
     ];

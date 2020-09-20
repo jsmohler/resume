@@ -1,7 +1,44 @@
-<div nz-row nzJustify="center">
-  <h1>Experience</h1>
+<div nz-row nzJustify="center" style="text-align: center; margin-bottom: 24px">
+  <div nz-col [nzSpan]="24">
+    <h1>Experience</h1>
+  </div>
+  <div nz-col [nzSpan]="24">
+    <h2 class="quote">
+      "Your best and wisest refuge from all troubles is in your science" - Ada
+      Lovelace
+    </h2>
+  </div>
 </div>
 
+<div nz-row nzJustify="space-between" [nzGutter]="[24, 24]">
+  <div nz-col [nzXs]="24" [nzLg]="12" *ngFor="let experience of experiences">
+    <nz-card nzBordered nzHoverable style="height: 100%">
+      <h3>
+        {{ experience.header.company }}
+      </h3>
+      <p class="role" *ngFor="let role of experience.header.roles">
+        {{ role.title }}
+        <nz-divider nzType="vertical"></nz-divider>
+        <i nz-icon nzType="calendar" nzTheme="outline"></i>{{ role.dates }}
+      </p>
+      <div style="margin-top: 8px">
+        <em>
+          <i nz-icon nzType="compass" nzTheme="outline"></i
+          >{{ experience.header.location }}
+        </em>
+      </div>
+      <ul style="padding-inline-start: 20px; margin-top: 1em">
+        <li
+          class="responsibility"
+          *ngFor="let responsibility of experience.responsibilities"
+        >
+          {{ responsibility }}
+        </li>
+      </ul>
+    </nz-card>
+  </div>
+</div>
+<!-- 
 <div nz-row nzJustify="center">
   <div nz-col [nzSpan]="20">
     <nz-list>
@@ -43,4 +80,4 @@
       </nz-list-item>
     </nz-list>
   </div>
-</div>
+</div> -->
