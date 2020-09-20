@@ -2,57 +2,18 @@
   <h1>Publications</h1>
 </div>
 
-<div nz-row nzGutter="24" nzJustify="space-around">
-  <div nz-col>
-    <nz-list nzItemLayout="vertical">
-      <nz-list-item>
-        <a
-          href="https://www.sciencedirect.com/science/article/abs/pii/S2210670717310685?via%3Dihub"
-        >
-          <nz-card nzHoverable>
-            <nz-list-item-meta>
-              <nz-list-item-meta-title>
-                Ancile: Privacy-preserving framework for access control and
-                interoperability of electronic health records using blockchain
-                technology
-              </nz-list-item-meta-title>
-              <nz-list-item-meta-description>
-                Sustainable Cities and Society
-              </nz-list-item-meta-description>
-            </nz-list-item-meta>
-            <p>
-              Gaby G. Dagher, Jordan Mohler, Matea Milojkovic, Praneeth Babu
-              Marella. Ancile: Privacy-preserving framework for access control
-              and interoperability of electronic health records using blockchain
-              technology. Sustainable Cities and Society, Volume 39, 2018, Pages
-              283-297, ISSN 2210-6707
-            </p>
-          </nz-card>
-        </a>
-      </nz-list-item>
-      <nz-list-item>
-        <a href="https://link.springer.com/chapter/10.1007/978-3-030-25109-3_8">
-          <nz-card nzHoverable>
-            <nz-list-item-meta>
-              <nz-list-item-meta-title
-                >GenVote: Blockchain-Based Customizable and Secure Voting
-                Platform
-              </nz-list-item-meta-title>
-              <nz-list-item-meta-description>
-                ICISSP: International Conference on Information Systems Security
-                and Privacy
-              </nz-list-item-meta-description>
-            </nz-list-item-meta>
-            <p>
-              Marella P.B., Milojkovic M., Mohler J., Dagher G.G. (2019)
-              GenVote: Blockchain-Based Customizable and Secure Voting Platform.
-              In: Mori P., Furnell S., Camp O. (eds) Information Systems
-              Security and Privacy. ICISSP 2018. Communications in Computer and
-              Information Science, vol 977. Springer, Cham.
-            </p>
-          </nz-card>
-        </a>
-      </nz-list-item>
-    </nz-list>
-  </div>
+<div nz-row [nzGutter]="[48, 24]" nzJustify="space-around">
+  <nz-col *ngFor="let pub of publications" [nzXs]="24" [nzMd]="12">
+    <nz-card style="height: 100%" [nzTitle]="title1">
+      <ng-template #title1>
+        <h4 style="white-space: normal">
+          <a [href]="pub.link">{{ pub.title }}</a>
+        </h4>
+        <em style="white-space: normal">{{ pub.journal }}</em>
+      </ng-template>
+      <p>
+        {{ pub.citation }}
+      </p>
+    </nz-card>
+  </nz-col>
 </div>

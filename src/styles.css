@@ -30,10 +30,10 @@ h2 {
 }
 
 p {
-  font-size: calc(0.9em + 0.25vw);
+  font-size: calc(0.85em + 0.25vw);
   margin-bottom: 0;
 }
 
 li {
-  font-size: calc(0.9em + 0.25vw);
+  font-size: calc(0.7em + 0.25vw);
 }

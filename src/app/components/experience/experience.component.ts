@@ -6,9 +6,13 @@ export interface Experience {
 }
 
 export interface ExperienceHeader {
-  title: string;
+  roles: Experienceroles[];
   company: string;
   location: string;
+}
+
+export interface Experienceroles {
+  title: string;
   dates: string;
 }
 
@@ -33,66 +37,97 @@ export class ExperienceComponent implements OnInit {
     this.experiences = [
       {
         header: {
-          title: 'Associate - Software Developer',
+          roles: [
+            {
+              title: 'Associate - Software Developer',
+              dates: 'July 2020 - Current',
+            },
+            {
+              title: 'Senior Consultant - Software Developer',
+              dates: 'July 2019 - July 2020',
+            },
+            {
+              title: 'Consultant - Software Developer',
+              dates: 'October 2018 - July 2019',
+            },
+          ],
           company: 'Allata',
           location: 'Eagle, ID',
-          dates: 'July 2020 - Current',
         },
-        responsibilities: [],
+        responsibilities: [
+          'Work as primary leader for a small team with Slalom Consulting',
+          'Determine best practices for promoting diversity and inclusion on internal company websites',
+          'Produce a 5-year plan for an internal diversity and inclusion website for Arrow Electronics',
+        ],
       },
       {
         header: {
-          title: 'Senior Consultant - Software Developer',
-          company: 'Allata',
-          location: 'Eagle, ID',
-          dates: 'July 2019 - July 2020',
-        },
-        responsibilities: [],
-      },
-      {
-        header: {
-          title: 'Consultant - Software Developer',
-          company: 'Allata',
-          location: 'Eagle, ID',
-          dates: 'October 2018 - July 2019',
-        },
-        responsibilities: [],
-      },
-      {
-        header: {
-          title: 'Student, B.S. Computer Science',
+          roles: [
+            {
+              title: 'Student, B.S. Computer Science',
+              dates: 'September 2015 - June 2018',
+            },
+          ],
           company: 'University of Denver',
           location: 'Denver, CO',
-          dates: 'September 2015 - June 2018',
         },
-        responsibilities: [],
+        responsibilities: [
+          'BS in Computer Science with minors in Mathematics and Business Administration',
+          'Graduated Cum Laude with a final GPA of 3.93',
+        ],
       },
       {
         header: {
-          title: 'Diversity and Inclusion Specialist, Project Lead',
+          roles: [
+            {
+              title: 'Diversity and Inclusion Specialist, Project Lead',
+              dates: 'March 2018 - May 2018',
+            },
+          ],
           company: 'Slalom Consulting and Arrow Electronics',
           location: 'Denver, CO',
-          dates: 'March 2018 - May 2018',
         },
-        responsibilities: [],
+        responsibilities: [
+          'Work as primary leader for a small team with Slalom Consulting',
+          'Determine best practices for promoting diversity and inclusion on internal company websites',
+          'Produce a 5-year plan for an internal diversity and inclusion website for Arrow Electronics',
+        ],
       },
       {
         header: {
-          title: 'Help Center Representative, Field Support Specialist',
+          roles: [
+            {
+              title: 'Field Support Specialist',
+              dates: 'January 2017 - October 2017',
+            },
+            {
+              title: 'Help Center Representative',
+              dates: 'October 2016 - January 2017',
+            },
+          ],
           company: 'Information Technology, University of Denver',
           location: 'Denver, CO',
-          dates: 'October 2016 - October 2017',
         },
-        responsibilities: [],
+        responsibilities: [
+          'Assist University of Denver students, faculty, and staff with software and hardware issues such as: network connectivity issues, software installation, malware detection and removal, and more',
+          'Support university-owned technology by providing office-to-office service to faculty and staff',
+        ],
       },
       {
         header: {
-          title: 'Research Associate',
+          roles: [
+            {
+              title: 'Research Associate',
+              dates: 'May 2017 - July 2017',
+            },
+          ],
           company: 'Department of Computer Science, Boise State University',
           location: 'Boise, ID',
-          dates: 'May 2017 - July 2017',
         },
-        responsibilities: [],
+        responsibilities: [
+          'Conduct research in Software Security under US National Science Foundation Grant CNS 146113',
+          'Partner with two other research associates and a Boise State professor to produce two research papers on blockchain technology',
+        ],
       },
     ];
   }
