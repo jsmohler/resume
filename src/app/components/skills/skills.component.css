@@ -10,12 +10,7 @@ body {
   flex-grow: 1;
 }
 
-i {
-  font-size: 16px;
-}
-
 .ant-list {
-  font-size: 16px;
   color: #48737a;
   font-weight: 400;
 }
@@ -27,6 +22,7 @@ i {
 .skill-header {
   text-align: center;
   font-weight: 500;
+  color: #48737a !important;
 }
 
 .ant-collapse-borderless {

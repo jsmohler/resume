@@ -16,14 +16,12 @@
 
 <ng-template #exp let-exp>
   <h3>{{ exp.title }}</h3>
-  <p>
-    <strong>{{ exp.company }}</strong>
-  </p>
-  <p>
+  <strong>{{ exp.company }}</strong>
+  <div>
     <em>
       <i nz-icon nzType="compass" nzTheme="outline"></i>{{ exp.location }}
       <nz-divider nzType="vertical"></nz-divider>
       <i nz-icon nzType="calendar" nzTheme="outline"></i>{{ exp.dates }}
     </em>
-  </p>
+  </div>
 </ng-template>

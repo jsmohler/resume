@@ -65,33 +65,11 @@ body {
 }
 
 .welcome-text {
-  font-family: "mmhmm";
-  font-size: 64px;
+  font-family: "chewy";
   color: white;
   margin: 72px 0 0 0;
-  line-height: 70%;
-}
-
-@media screen and (min-width: 750) {
-  .welcome-text {
-    font-size: 96px;
-    margin: 108px 0 0 0;
-    line-height: 90%;
-  }
-  .content-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 24px 24px 24px 24px;
-  }
-}
-
-@media screen and (max-width: 400) {
-  .welcome-text {
-    font-size: 48px;
-    margin: 50px 0 0 0;
-    line-height: 50%;
-  }
+  font-size: calc(2em + 5vw);
+  line-height: 100%;
 }
 
 h2 {
@@ -133,16 +111,7 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 35px 100px 35px 100px;
-}
-
-@media screen and (min-width: 1225px) {
-  .content-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 35px 200px 35px 200px;
-  }
+  padding: 35px 0 35px 0;
 }
 
 .grey-content {

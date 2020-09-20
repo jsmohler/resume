@@ -1,10 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
-@font-face {
-  font-family: "mmhmm";
-  src: url("./assets/fonts/Mmhmm-Regular.otf") format("opentype");
-}
-
 @font-face {
   font-family: "kaushan";
   src: url("./assets/fonts/KaushanScript-Regular.ttf") format("opentype");
@@ -25,8 +19,21 @@
 
 h1 {
   color: #48737a;
-  font-size: 64px;
+  font-size: calc(3em + 2vw);
   font-family: "chewy";
   margin-bottom: 0.25em;
   text-align: center;
+}
+
+h2 {
+  font-size: calc(1em + 0.5vw);
+}
+
+p {
+  font-size: calc(0.9em + 0.25vw);
+  margin-bottom: 0;
+}
+
+li {
+  font-size: calc(0.9em + 0.25vw);
 }
