@@ -5,7 +5,7 @@
   style="padding: 0 16px 0 16px"
 >
   <div nz-col [nzSpan]="24">
-    <h1>Skill</h1>
+    <h1>Skills</h1>
   </div>
   <div nz-col [nzSpan]="24">
     <h2 class="quote">
@@ -114,9 +114,9 @@
   ><i nz-icon nzType="star" nzTheme="fill"></i
 ></ng-template>
 
-<ng-template #skillList let-skills let-header="header" let-hideTitle="hide">
-  <nz-list nzSize="small">
-    <nz-list-header *ngIf="!hideTitle">
+<ng-template #skillList let-skills let-header="header">
+  <nz-list>
+    <nz-list-header>
       <h2 class="skill-header">{{ header }}</h2>
     </nz-list-header>
     <nz-list-item *ngFor="let skill of skills">

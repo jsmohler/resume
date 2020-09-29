@@ -10,23 +10,27 @@
 </div>
 
 <nz-divider></nz-divider>
-<div nz-row nzJustify="space-around" [nzGutter]="32">
-  <div nz-col>
+<div nz-row nzJustify="space-around" [nzGutter]="[16, 16]">
+  <div nz-col style="text-align: center">
     <a href="mailto:jordansmohler@gmail.com">
-      <nz-avatar class="icon" nzShape="square" nzIcon="mail"></nz-avatar>
-      <span *ngIf="!isMobile">jordansmohler@gmail.com</span>
+      <nz-avatar
+        class="icon"
+        nzShape="square"
+        nzSize="large"
+        nzIcon="mail"
+      ></nz-avatar>
     </a>
   </div>
   <div nz-col>
     <a href="https://www.linkedin.com/in/mohlerjordan">
-      <nz-avatar class="icon" nzShape="square" nzIcon="linkedin"> </nz-avatar>
-      <span *ngIf="!isMobile">https://www.linkedin.com/in/mohlerjordan</span>
+      <nz-avatar class="icon" nzShape="square" nzSize="large" nzIcon="linkedin">
+      </nz-avatar>
     </a>
   </div>
   <div nz-col>
     <a href="https://github.com/jsmohler">
-      <nz-avatar class="icon" nzShape="square" nzIcon="github"> </nz-avatar>
-      <span *ngIf="!isMobile">https://github.com/jsmohler</span>
+      <nz-avatar class="icon" nzShape="square" nzSize="large" nzIcon="github">
+      </nz-avatar>
     </a>
   </div>
 </div>
