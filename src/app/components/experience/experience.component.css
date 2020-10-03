@@ -10,6 +10,10 @@ p {
   margin-bottom: 0;
 }
 
+h3 {
+  color: #48737a;
+}
+
 .role {
   font-size: calc(0.75em + 0.15vw);
 }
@@ -19,6 +23,6 @@ p {
 }
 
 .quote {
-  color: #dedbd9;
+  color: white;
   font-family: "kaushan";
 }

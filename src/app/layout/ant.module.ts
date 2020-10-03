@@ -18,6 +18,8 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzAffixModule } from 'ng-zorro-antd/affix';
 import { NzRateModule } from 'ng-zorro-antd/rate';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzTagModule } from 'ng-zorro-antd/tag';
 
 const antModules = [
   NzButtonModule,
@@ -35,6 +37,8 @@ const antModules = [
   NzDividerModule,
   NzRateModule,
   NzTimelineModule,
+  NzTableModule,
+  NzTagModule,
 ];
 
 /** config angular i18n **/

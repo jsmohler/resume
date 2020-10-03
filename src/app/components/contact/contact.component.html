@@ -10,23 +10,29 @@
 </div>
 
 <nz-divider></nz-divider>
-<div nz-row nzJustify="space-around" [nzGutter]="32">
-  <div nz-col>
+<div nz-row nzJustify="space-around" [nzGutter]="[0, 16]">
+  <div nz-col style="text-align: center" [nzXs]="24" [nzLg]="8">
     <a href="mailto:jordansmohler@gmail.com">
-      <nz-avatar class="icon" nzShape="square" nzIcon="mail"></nz-avatar>
-      <span *ngIf="!isMobile">jordansmohler@gmail.com</span>
+      <nz-tag nzColor="#48737a">
+        <i nz-icon nzType="mail"></i>
+        <span>jordansmohler@gmail.com</span>
+      </nz-tag>
     </a>
   </div>
-  <div nz-col>
+  <div nz-col style="text-align: center" [nzXs]="24" [nzLg]="8">
     <a href="https://www.linkedin.com/in/mohlerjordan">
-      <nz-avatar class="icon" nzShape="square" nzIcon="linkedin"> </nz-avatar>
-      <span *ngIf="!isMobile">https://www.linkedin.com/in/mohlerjordan</span>
+      <nz-tag nzColor="#48737a">
+        <i nz-icon nzType="linkedin"></i>
+        <span>www.linkedin.com/in/mohlerjordan</span>
+      </nz-tag>
     </a>
   </div>
-  <div nz-col>
+  <div nz-col style="text-align: center" [nzXs]="24" [nzLg]="8">
     <a href="https://github.com/jsmohler">
-      <nz-avatar class="icon" nzShape="square" nzIcon="github"> </nz-avatar>
-      <span *ngIf="!isMobile">https://github.com/jsmohler</span>
+      <nz-tag nzColor="#48737a">
+        <i nz-icon nzType="github"></i>
+        <span>github.com/jsmohler</span>
+      </nz-tag>
     </a>
   </div>
 </div>

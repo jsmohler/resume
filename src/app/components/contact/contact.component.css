@@ -28,4 +28,14 @@ body {
 a {
   /* color: white; */
   font-weight: 500;
+  text-align: center;
+}
+
+nz-tag {
+  cursor: pointer;
+  font-size: calc(0.85em + 0.25vw);
+  padding: 5px;
+  margin: 8px;
+  width: 90%;
+  border-radius: 5px;
 }
