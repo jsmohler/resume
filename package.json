@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod --base-href \"https://jsmohler.github.io/resume/\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -20,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
     "angular-cli-ghpages": "^0.6.2",
-    "ng-zorro-antd": "^9.2.2",
+    "ng-zorro-antd": "^9.3.0",
     "rxjs": "~6.5.5",
     "save-dev": "0.0.1-security",
     "tslib": "^2.0.0",
