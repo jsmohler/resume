@@ -35,7 +35,7 @@ p {
 }
 
 li {
-  font-size: calc(0.7em + 0.25vw);
+  font-size: calc(0.85em + 0.25vw);
 }
 
 .section-header {
