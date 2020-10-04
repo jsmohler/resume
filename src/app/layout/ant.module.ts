@@ -19,27 +19,7 @@ import { NzRateModule } from 'ng-zorro-antd/rate';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTagModule } from 'ng-zorro-antd/tag';
-import {
-  DownOutline,
-  MailOutline,
-  LinkedinOutline,
-  GithubOutline,
-  CalendarOutline,
-  CompassOutline,
-  LinkOutline,
-  StarOutline,
-} from '@ant-design/icons-angular/icons';
-
-const icons = [
-  DownOutline,
-  MailOutline,
-  LinkedinOutline,
-  GithubOutline,
-  CalendarOutline,
-  CompassOutline,
-  LinkOutline,
-  StarOutline,
-];
+import { NzIconModule } from 'ng-zorro-antd';
 
 const antModules = [
   NzButtonModule,
@@ -58,6 +38,7 @@ const antModules = [
   NzTimelineModule,
   NzTableModule,
   NzTagModule,
+  NzIconModule,
 ];
 
 /** config angular i18n **/
@@ -67,11 +48,10 @@ registerLocaleData(en);
 
 /** config ng-zorro-antd i18n **/
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
-import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @NgModule({
   declarations: [],
-  imports: [...antModules, NzIconModule.forRoot(icons)],
+  imports: [...antModules],
   exports: [...antModules],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
 })

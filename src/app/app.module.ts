@@ -10,8 +10,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
 import { AntModule } from './layout/ant.module';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -19,8 +17,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { PublicationsComponent } from './components/publications/publications.component';
 import { EducationComponent } from './components/education/education.component';
-
-registerLocaleData(en);
 
 @NgModule({
   declarations: [
