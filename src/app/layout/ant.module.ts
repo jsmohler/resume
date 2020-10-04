@@ -21,6 +21,22 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzIconModule } from 'ng-zorro-antd';
 
+import {
+  LinkOutline,
+  MailOutline,
+  CompassOutline,
+  LinkedinOutline,
+  GithubOutline,
+} from '@ant-design/icons-angular/icons';
+
+const icons = [
+  LinkOutline,
+  MailOutline,
+  CompassOutline,
+  LinkedinOutline,
+  GithubOutline,
+];
+
 const antModules = [
   NzButtonModule,
   NzTypographyModule,
@@ -51,7 +67,7 @@ import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 
 @NgModule({
   declarations: [],
-  imports: [...antModules],
+  imports: [...antModules, NzIconModule.forRoot(icons)],
   exports: [...antModules],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
 })
